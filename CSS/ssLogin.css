@@ -1,0 +1,71 @@
+﻿.containerouter { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width:100%;
+    height:700px;
+}
+
+.containerinner {
+    max-width: 860px;
+    border-color: #f47c4b;
+    border-width: 6px;
+    border-style: solid;
+    padding: 5px 90px 110px 90px;
+    background-color: #183153;
+    
+}
+
+.loginTitle {
+    font-size: 3rem;
+    text-align: center;
+    color: #f47c4b;
+    font-weight:bold;
+}
+
+.usernameDiv, .passwordDiv  {
+    margin-bottom: 35px;
+}
+
+.loginbtnDiv {
+   
+    width:350px;
+    display:flex;
+    margin-bottom: 25px;
+}
+
+.txtInputs{
+    width:90%;
+    height:20px;
+    border-radius:8px;
+    padding:10px; 
+
+}
+
+.lblLabels {
+    color: #f47c4b;
+    font-weight:bold;
+    font-size:1.5rem;
+}
+
+.loginBtnEntr{
+    width:50%;
+    height:35px;
+    font-size:12px;
+    margin-right:20px;
+    background-color:forestgreen;
+    color:white;
+}
+
+.loginBtnCncl {
+    width: 50%;
+    height: 35px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+}
+
+.regLink{
+    color:white;
+}

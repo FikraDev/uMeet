@@ -1,0 +1,38 @@
+﻿.h03, .h03-2, .h03-3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.di-h03, .di-h03-2, .di-h03-3 {
+    box-sizing: border-box;
+    height: 60px;
+    display: inline-block;
+    margin: 0;
+    padding: 1px;
+    position: relative;
+    bottom: 0px;
+}
+
+.di-h03, .di-h03-2, .di-h03-3, .h03, .h03-2, .h03-3 {
+    bottom: 0px;
+}
+
+.di-h03 {
+    background-color: royalblue;
+    padding-left: 0px;
+    margin: 2px;
+}
+
+.di-h03-2 {
+    background-color: mediumpurple;
+    bottom: 0px;
+}
+
+.di-h03-3 {
+    background-color: cadetblue;
+    bottom: 0px;
+}
+
+.a1 {
+    color: red;
+}

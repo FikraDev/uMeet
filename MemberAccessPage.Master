@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MemberAccessPage.master.cs" Inherits="uMeet.MemberAccessPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta http-equiv="“Pragma”" content="”no-cache”">
+    <meta http-equiv="“Expires”" content="”-1″">
+    <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”">
+    <link rel="stylesheet" href="CSS/memberAccessStyleSheet.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" <%--integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"--%> <%--crossorigin="anonymous" --%>/>
+</head>
+<body>
+    
+        <div>
+            <asp:ContentPlaceHolder ID="MemberAccessContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    
+</body>
+</html>

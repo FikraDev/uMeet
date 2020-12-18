@@ -1,19 +1,21 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/uMeetMaster.Master" AutoEventWireup="true" CodeBehind="EditProfile.aspx.cs" Inherits="uMeet.EditProfile" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main_Content" runat="server">
 
-     <div class="outerContainer">
+
+    <div class="outerContainer">
 
         <div class="innerContainer">
             <form runat="server">
 
                 <asp:Literal runat="server"><h3 class="regTitle">Edit Profile</h3></asp:Literal>
 
-                <asp:Literal runat="server"><h2>Edit Your Profile</h2></asp:Literal>
+                <asp:Literal runat="server"><h2>Update Your Profile</h2></asp:Literal>
 
                 <div>
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtInputP" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtUsername" placeholder="Enter Username" MaxLength="15"></asp:TextBox>
                 </div>
 
                 <div>
@@ -59,23 +61,29 @@
                 </div>
 
                 <div class="btnDiv">
-                    <asp:Button runat="server" CssClass="btn" ID="btnSignup" Text="Sign Up" OnClick="btnSignup_Click" />
+                    <asp:Button runat="server" CssClass="btn" ID="btnUpdate" Text="Update Profile" OnClick="btnUpdate_Click" />
                     <asp:Button runat="server" CssClass="btn" ID="btnCancel" Text="Cancel" OnClick="btnCancel_Click" />
                 </div>
+                <asp:Label ID="lblErrorMsg" runat="server"></asp:Label>
+                
+                <div>
 
+                </div>
+            
+                <asp:Literal runat="server"><h2>Delete Your Profile</h2></asp:Literal>
 
                 <div>
-                    <asp:HyperLink NavigateUrl="~/UserLogin.aspx" runat="server" CssClass="regLink" Text="Already a Member? Login"></asp:HyperLink>
+                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtUsrName" placeholder="Enter Username" MaxLength="15"></asp:TextBox>
                 </div>
-
-                <asp:Label ID="lblErrorMsg" runat="server"></asp:Label>
-
-
-
-
-
+                <div class="btnDiv">
+                    <asp:Button runat="server" ID="btnDelete" Text="Delete Profile" CssClass="btn" OnClick="btnDelete_Click" />
+                    <asp:Button runat="server" CssClass="btn" ID="btnDelCancel" Text="Cancel" OnClick="btnDelCancel_Click" />
+                </div>
+                <asp:Label ID="lblErrMsg" runat="server"></asp:Label>
             </form>
         </div>
 
     </div>
+
+
 </asp:Content>

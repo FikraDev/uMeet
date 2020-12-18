@@ -36,3 +36,91 @@
 .a1 {
     color: red;
 }
+
+.blink {
+    background-color: #d2eb34;
+    color: black;
+    font-size: 24px;
+    font-family: Calibri;
+    padding: 10px 24px;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 19%;
+}
+
+.blink-me {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+    .blink-me:hover {
+        animation-play-state: paused;
+    }
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.banner {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.true-love {
+    color: red;
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+.heading {
+    color: black;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+}
+
+
+
+.blinkinDiv{
+    position:absolute;
+    top:60%;
+    left:15%;
+    width:60%;
+    height:40px;
+    border-radius:8px;
+}
+
+.millionDiv{
+    position:absolute;
+    top:35%;
+    left:0;
+    width:60%;
+    height:50px;
+    
+}
+
+.header2 {
+    color: red;
+    font-size: 5rem;
+    font-weight: 200;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+

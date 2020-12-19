@@ -38,6 +38,8 @@
         </asp:ContentPlaceHolder>
     </div>
 
+    <div class="divider"></div>
+
     <div class="social-div">
         <asp:HyperLink runat="server" NavigateUrl="https://www.twitter.com"><i class="fab fa-twitter"></i></asp:HyperLink>
         <asp:HyperLink runat="server" NavigateUrl="https://www.facebook.com"><i class="fab fa-facebook"></i></asp:HyperLink>

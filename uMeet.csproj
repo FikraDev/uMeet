@@ -68,7 +68,9 @@
     <Content Include="About.aspx" />
     <Content Include="ContactPage.aspx" />
     <Content Include="CSS\indexpageCSS.css" />
-    <Content Include="CSS\memberAccessStyleSheet.css" />
+    <Content Include="CSS\MemAccessStyleSheetMaster.css" />
+    <Content Include="CSS\MemAccessLandingPage.css" />
+    <Content Include="CSS\MemPageFemale.css" />
     <Content Include="CSS\ssLogin.css" />
     <Content Include="CSS\stylesheetMaster.css" />
     <Content Include="CSS\Testimonial.css" />
@@ -79,10 +81,8 @@
     <Content Include="Image\MainBackground.jpg" />
     <Content Include="indexPage.aspx" />
     <Content Include="MemberAccessLanding-Page.aspx" />
+    <Content Include="MemPageFemale.aspx" />
     <Content Include="ProfileImgs\Female\F1.jpg" />
-    <Content Include="ProfileImgs\Female\F10.jpg" />
-    <Content Include="ProfileImgs\Female\F11.jpg" />
-    <Content Include="ProfileImgs\Female\F12.jpg" />
     <Content Include="ProfileImgs\Female\F2.jpg" />
     <Content Include="ProfileImgs\Female\F3.jpg" />
     <Content Include="ProfileImgs\Female\F4.jpg" />
@@ -92,9 +92,6 @@
     <Content Include="ProfileImgs\Female\F8.jpg" />
     <Content Include="ProfileImgs\Female\F9.jpg" />
     <Content Include="ProfileImgs\Male\M1.jpg" />
-    <Content Include="ProfileImgs\Male\M10.jpg" />
-    <Content Include="ProfileImgs\Male\M11.jpg" />
-    <Content Include="ProfileImgs\Male\M12.jpg" />
     <Content Include="ProfileImgs\Male\M2.jpg" />
     <Content Include="ProfileImgs\Male\M3.jpg" />
     <Content Include="ProfileImgs\Male\M4.jpg" />
@@ -159,6 +156,13 @@
     </Compile>
     <Compile Include="MemberAccessPage.Master.designer.cs">
       <DependentUpon>MemberAccessPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MemPageFemale.aspx.cs">
+      <DependentUpon>MemPageFemale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemPageFemale.aspx.designer.cs">
+      <DependentUpon>MemPageFemale.aspx</DependentUpon>
     </Compile>
     <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

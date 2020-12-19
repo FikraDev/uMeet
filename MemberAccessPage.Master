@@ -10,17 +10,36 @@
      <meta http-equiv="“Pragma”" content="”no-cache”">
     <meta http-equiv="“Expires”" content="”-1″">
     <meta http-equiv="“CACHE-CONTROL”" content="”NO-CACHE”">
-    <link rel="stylesheet" href="CSS/memberAccessStyleSheet.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/MemAccessStyleSheetMaster.css" type="text/css"; />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" <%--integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"--%> <%--crossorigin="anonymous" --%>/>
 </head>
 <body>
+
+    <div>
+        <header class="hdr-div">
+            <h3 runat="server" class="headerTxt1">uMeet</h3>
+             <asp:HyperLink runat="server" NavigateUrl="~/indexPage.aspx" Text="Home" CssClass="headerLnk"></asp:HyperLink>
+        </header>
+    </div>
     
         <div>
             <asp:ContentPlaceHolder ID="MemberAccessContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+    <div class="divider"></div>
+
+    <div class="social-div">
+        <asp:HyperLink runat="server" NavigateUrl="https://www.twitter.com"><i class="fab fa-twitter"></i></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="https://www.facebook.com"><i class="fab fa-facebook"></i></asp:HyperLink>
+        <asp:HyperLink runat="server" NavigateUrl="https://www.instagram.com"><i class="fab fa-instagram"></i></asp:HyperLink>
+    </div>
+
+    <footer>
+        <asp:Literal runat="server" ID="ftr">Copyright &copy; 2020-Charlene Crump, Ryan Campbell, Oneil Gayle & Germain Newby</asp:Literal>
+    </footer>
     
 </body>
 </html>

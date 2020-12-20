@@ -1,0 +1,74 @@
+﻿body {
+    padding:0;
+    margin:0;
+}
+
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainer {
+    margin-top: 60px;
+    width: 700px;
+    height: auto;
+    background-color: #FFF;
+    border-color: #FFD43B;
+    border-width: 4px;
+    border-style: solid;
+    padding: 0 60px 30px 60px;
+    margin-bottom: 150px;
+}
+
+.regTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f47c4b;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contactInput {
+    width: 50%;
+    height: 30px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.contactMulti{
+    width:52%;
+    height:300px;
+}
+
+.btnDiv {
+    margin: 35px 0 35px;
+    text-align: center;
+}
+
+.contactSubmit {
+    width: 15%;
+    height: 35px;
+    background-color: forestgreen;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contactCancel {
+    width: 15%;
+    height: 35px;
+    background-color: #E50914;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+

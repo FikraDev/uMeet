@@ -67,10 +67,13 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="ContactPage.aspx" />
+    <Content Include="CSS\contact.css" />
     <Content Include="CSS\indexpageCSS.css" />
     <Content Include="CSS\MemAccessStyleSheetMaster.css" />
     <Content Include="CSS\MemAccessLandingPage.css" />
+    <Content Include="CSS\MemPageMale.css" />
     <Content Include="CSS\MemPageFemale.css" />
+    <Content Include="CSS\signUp.css" />
     <Content Include="CSS\ssLogin.css" />
     <Content Include="CSS\stylesheetMaster.css" />
     <Content Include="CSS\Testimonial.css" />
@@ -82,6 +85,7 @@
     <Content Include="indexPage.aspx" />
     <Content Include="MemberAccessLanding-Page.aspx" />
     <Content Include="MemPageFemale.aspx" />
+    <Content Include="MemPageMale.aspx" />
     <Content Include="ProfileImgs\Female\F1.jpg" />
     <Content Include="ProfileImgs\Female\F2.jpg" />
     <Content Include="ProfileImgs\Female\F3.jpg" />
@@ -163,6 +167,13 @@
     </Compile>
     <Compile Include="MemPageFemale.aspx.designer.cs">
       <DependentUpon>MemPageFemale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemPageMale.aspx.cs">
+      <DependentUpon>MemPageMale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemPageMale.aspx.designer.cs">
+      <DependentUpon>MemPageMale.aspx</DependentUpon>
     </Compile>
     <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

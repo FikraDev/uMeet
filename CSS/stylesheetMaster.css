@@ -82,8 +82,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.txt1 {
+    color: white;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
 }
 

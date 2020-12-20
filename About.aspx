@@ -9,8 +9,8 @@
     </div>
 
     <div class="aboutdiv">
-        <asp:Literal ID="aboutTxt1" runat="server">
-            Over the last 20 years, technology has changed. The way people communicate has changed. But one thing that remains the same is uMeet’s mission: to create meaningful connections which lead to long-term love. It all started in 1997. After 35 years practicing as a clinical psychologist and counseling thousands of couples,uMeet founder Dr. Neil Clark Warren came to believe there had to be a better way to put two people together for relationship success.
+        <asp:Literal runat="server"><p class="txt1">Over the last 20 years, technology has changed. The way people communicate has changed. But one thing that remains the same is uMeet’s mission: to create meaningful connections which lead to long-term love. It all started in 1997. After 35 years practicing as a clinical psychologist and counseling thousands of couples,uMeet founder Dr. Neil Clark Warren came to believe there had to be a better way to put two people together for relationship success.</p>
+            
         </asp:Literal>
     </div>
 

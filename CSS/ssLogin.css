@@ -1,71 +1,80 @@
-﻿.containerouter { 
+﻿
+
+.containerouter {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    width:100%;
-    height:700px;
 }
 
 .containerinner {
-    max-width: 860px;
-    border-color: #f47c4b;
+    margin: 0;
+    width: 500px;
+    border-color: #ffd43b;
     border-width: 6px;
     border-style: solid;
-    padding: 5px 90px 110px 90px;
-    background-color: #183153;
-    
+    background-color: white;
+    text-align: center;
 }
 
 .loginTitle {
     font-size: 3rem;
     text-align: center;
     color: #f47c4b;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.usernameDiv, .passwordDiv  {
-    margin-bottom: 35px;
+.usernameDiv {
+    margin-bottom: 20px;
 }
 
-.loginbtnDiv {
-   
-    width:350px;
-    display:flex;
-    margin-bottom: 25px;
+.btnDiv {
+    margin: 25px 0 25px;
 }
 
-.txtInputs{
-    width:90%;
-    height:20px;
-    border-radius:8px;
-    padding:10px; 
-
+.txtInputs {
+    width: 60%;
+    height: 20px;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .lblLabels {
     color: #f47c4b;
-    font-weight:bold;
-    font-size:1.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.loginBtnEntr{
-    width:50%;
-    height:35px;
-    font-size:12px;
-    margin-right:20px;
-    background-color:forestgreen;
-    color:white;
+.loginBtnEntr {
+    width: 25%;
+    height: 45px;
+    font-size: 15px;
+    margin-right: 20px;
+    background-color: forestgreen;
+    color: white;
 }
 
 .loginBtnCncl {
-    width: 50%;
-    height: 35px;
-    font-size: 12px;
+    width: 25%;
+    height: 45px;
+    font-size: 15px;
     background-color: red;
     color: white;
 }
 
-.regLink{
-    color:white;
+.regDiv {
+    margin-bottom: 60px;
+}
+
+.regLink {
+    color: #f47c4b;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.errMsg{
+    font-size:17px;
+    font-weight:bold;
+    
 }

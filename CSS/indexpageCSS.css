@@ -1,36 +1,40 @@
-﻿.h03, .h03-2, .h03-3 {
+﻿
+
+.bigDiv {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap:0px;
+    grid-row-gap:45px;
+    
+}
+
+.divLeft {
+    background-color: #1a5f78;
     text-align: center;
-    padding: 5px;
+    height: 400px;
+    font-size: 35px;
+    vertical-align:middle;
+    line-height:400px;
 }
 
-.di-h03, .di-h03-2, .di-h03-3 {
-    box-sizing: border-box;
-    height: 60px;
-    display: inline-block;
-    margin: 0;
-    padding: 1px;
-    position: relative;
-    bottom: 0px;
+.divMid {
+    background-color: #617dc6;
+    text-align: center;
+    height: 400px;
+    font-size: 35px;
+    vertical-align: middle;
+    line-height: 400px;
+    color:white;
 }
 
-.di-h03, .di-h03-2, .di-h03-3, .h03, .h03-2, .h03-3 {
-    bottom: 0px;
-}
-
-.di-h03 {
-    background-color: royalblue;
-    padding-left: 0px;
-    margin: 2px;
-}
-
-.di-h03-2 {
-    background-color: mediumpurple;
-    bottom: 0px;
-}
-
-.di-h03-3 {
-    background-color: cadetblue;
-    bottom: 0px;
+.divRight {
+    background-color: #088a94;
+    text-align: center;
+    height: 400px;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 400px;
 }
 
 .a1 {
@@ -98,22 +102,21 @@
 
 
 
-.blinkinDiv{
-    position:absolute;
-    top:60%;
-    left:15%;
-    width:60%;
-    height:40px;
-    border-radius:8px;
+.blinkinDiv {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 60%;
+    height: 40px;
+    border-radius: 8px;
 }
 
-.millionDiv{
-    position:absolute;
-    top:35%;
-    left:0;
-    width:60%;
-    height:50px;
-    
+.millionDiv {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 60%;
+    height: 50px;
 }
 
 .header2 {
@@ -122,5 +125,3 @@
     font-weight: 200;
     text-shadow: 3px 3px 5px #000000;
 }
-
-

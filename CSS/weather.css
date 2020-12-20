@@ -1,0 +1,60 @@
+﻿body {
+    padding:0;
+    margin:0;
+}
+.outer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.inner{
+    width:900px;
+    height:auto;
+    margin-top:60px;
+
+}
+
+.txtInput{
+    width:30%;
+    height:25px;
+    font-size:18px;
+    padding:10px;
+}
+
+.weatherBtn {
+    width: 20%;
+    height: 35px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    border-radius: 0.12em;
+    transition: all 0.2s;
+}
+
+.tableX {
+    margin-top:30px;
+    width: 75%;
+    height: 350px;
+    color: #fff;
+    font-size: 22px;
+    border: 10px solid #ccc;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #F7F7F7;
+    color: #f47c4b;
+    font-weight: bold;
+}
+
+table th, table td {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+    .tableX td {
+        border: solid thin white; /*adds inner border*/
+    }
+

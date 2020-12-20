@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/uMeetMaster.Master" AutoEventWireup="true" CodeBehind="EditProfile.aspx.cs" Inherits="uMeet.EditProfile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="CSS/editProfile.css" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main_Content" runat="server">
 
@@ -10,7 +11,7 @@
         <div class="innerContainer">
             <form runat="server">
 
-                <asp:Literal runat="server"><h3 class="regTitle">Edit Profile</h3></asp:Literal>
+                <asp:Literal runat="server"><h3 class="regTitle">Profile Management</h3></asp:Literal>
 
                 <asp:Literal runat="server"><h2>Update Your Profile</h2></asp:Literal>
 
@@ -55,16 +56,16 @@
                     <asp:FileUpload runat="server" CssClass="upload" ID="fileupload" />
                 </div>
 
-                <div>
-                    <asp:Label runat="server" Text="Active"></asp:Label>
+                <div class="activDiv">
+                    <asp:Label runat="server" Text="Active" CssClass="activ"></asp:Label>
                     <asp:CheckBox runat="server" ID="chkbx" Checked="true" />
                 </div>
 
                 <div class="btnDiv">
-                    <asp:Button runat="server" CssClass="btn" ID="btnUpdate" Text="Update Profile" OnClick="btnUpdate_Click" />
-                    <asp:Button runat="server" CssClass="btn" ID="btnCancel" Text="Cancel" OnClick="btnCancel_Click" />
+                    <asp:Button runat="server" CssClass="btnUp" ID="btnUpdate" Text="Update Profile" OnClick="btnUpdate_Click" />
+                    <asp:Button runat="server" CssClass="btnCncl" ID="btnCancel" Text="Cancel" OnClick="btnCancel_Click" />
                 </div>
-                <asp:Label ID="lblErrorMsg" runat="server"></asp:Label>
+                <asp:Label ID="lblErrorMsg" runat="server" CssClass="errMsg"></asp:Label>
                 
                 <div>
 
@@ -76,8 +77,8 @@
                     <asp:TextBox runat="server" CssClass="txtInputs" ID="txtUsrName" placeholder="Enter Username" MaxLength="15"></asp:TextBox>
                 </div>
                 <div class="btnDiv">
-                    <asp:Button runat="server" ID="btnDelete" Text="Delete Profile" CssClass="btn" OnClick="btnDelete_Click" />
-                    <asp:Button runat="server" CssClass="btn" ID="btnDelCancel" Text="Cancel" OnClick="btnDelCancel_Click" />
+                    <asp:Button runat="server" ID="btnDelete" Text="Delete Profile" CssClass="btnDel" OnClick="btnDelete_Click" />
+                    <asp:Button runat="server" CssClass="btnCncl2" ID="btnDelCancel" Text="Cancel" OnClick="btnDelCancel_Click" />
                 </div>
                 <asp:Label ID="lblErrMsg" runat="server"></asp:Label>
             </form>

@@ -23,6 +23,7 @@
             <h3 runat="server" class="headerTxt1">uMeet</h3>
 
             <div class="nav">
+                <asp:HyperLink runat="server" NavigateUrl="~/Weather.aspx" Text="Weather" CssClass="headerLnk"></asp:HyperLink>
                 <asp:HyperLink runat="server" NavigateUrl="~/indexPage.aspx" Text="Home" CssClass="headerLnk"></asp:HyperLink>
                 <asp:HyperLink runat="server" NavigateUrl="~/About.aspx" Text="About" CssClass="headerLnk"></asp:HyperLink>
                 <asp:HyperLink runat="server" NavigateUrl="~/ContactPage.aspx" Text="Contact" CssClass="headerLnk"></asp:HyperLink>

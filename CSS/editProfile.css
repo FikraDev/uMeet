@@ -1,0 +1,119 @@
+﻿body{
+    padding:0;
+    margin:0;
+}
+
+.outerContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.innerContainer{
+    
+    padding:0;
+    text-align:center;
+    width:700px;
+    height:auto;
+    border:solid thick #ffd43b;
+}
+
+h3{
+    color:white;
+    font-size:4rem;
+}
+
+h2{
+    color:#f47c4b;
+    font-size:2.5rem;
+}
+
+.txtInputs{
+    width:45%;
+    height:25px;
+    padding:8px;
+    border-radius:8px;
+    margin-bottom:10px;
+    margin-left:30px;
+    font-size:18px;
+}
+
+.DDList {
+    width: 45%;
+    height: 35px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.upload{
+    width:45%;
+    height:25px;
+    font-size:18px;
+    margin-bottom:15px;
+    color:white;
+}
+
+.activ{
+    font-size:25px;
+    color:white;
+}
+
+.activDiv {
+    margin-bottom: 15px;
+}
+
+.btnUp {
+    width: 20%;
+    height: 35px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    border-radius: 0.12em;
+    transition: all 0.2s;
+}
+
+.btnCncl {
+    width: 20%;
+    height: 35px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    border-radius: 0.12em;
+    transition: all 0.2s;
+}
+
+.btnDel {
+    width: 20%;
+    height: 35px;
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    border-radius: 0.12em;
+    transition: all 0.2s;
+}
+
+.btnCncl2 {
+    width: 20%;
+    height: 35px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    border-radius: 0.12em;
+    transition: all 0.2s;
+}
+
+.btnDiv{
+    margin-bottom:70px;
+}
+
+.errMsg{
+    color:red;
+    font-weight:bold;
+    font-size:18px;
+}

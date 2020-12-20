@@ -16,15 +16,14 @@
                 <div class="singleDiv">
                     <div>
                         <asp:DropDownList runat="server" ID="maddlist" CssClass="maDropD" AutoPostBack="True">
+                            <asp:ListItem Value="0">Make a Selection</asp:ListItem>
                             <asp:ListItem Value="1">I am a Man seeking a Woman</asp:ListItem>
                             <asp:ListItem Value="2">I am a Woman seeking a Man</asp:ListItem>
-                            <asp:ListItem Value="3">Fire For any other Selection</asp:ListItem>
                         </asp:DropDownList>
                     </div>
 
                     <div class="inner-singleDiv">
-                        <asp:Button runat="server" Text="Search Now" CssClass="singleDiv-Btn" />
-
+                        <asp:Button runat="server" Text="Search Now" CssClass="singleDiv-Btn" OnClick="Unnamed2_Click" />
                     </div>
 
 

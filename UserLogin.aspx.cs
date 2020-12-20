@@ -55,7 +55,7 @@ namespace uMeet
                         Session["UserName"] = dr["UserName"].ToString();
                         Session["fName"] = dr["fName"].ToString();
                         Session["lName"] = dr["lName"].ToString();
-                        Response.Redirect("indexPage.aspx");
+                        Response.Redirect("MemberAccessLanding-Page.aspx");
                     }
                 }
                 else

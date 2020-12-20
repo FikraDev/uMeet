@@ -13,5 +13,26 @@ namespace uMeet
         {
 
         }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (maddlist.SelectedItem.Value == "1")
+                {
+                    Response.Redirect("MemPageFemale.aspx");
+                }
+                else
+                {
+                    Response.Redirect("MemPageMale.aspx");
+                }
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            
+           
+        }
     }
 }

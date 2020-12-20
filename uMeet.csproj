@@ -113,6 +113,7 @@
     <Content Include="img\married.jpg" />
     <Content Include="Testimonials.aspx" />
     <Content Include="UserLogin.aspx" />
+    <Content Include="weather.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="UserLogin.aspx.designer.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="weather.aspx.cs">
+      <DependentUpon>weather.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="weather.aspx.designer.cs">
+      <DependentUpon>weather.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebSiteLibrary.cs" />
   </ItemGroup>

@@ -33,6 +33,15 @@ namespace uMeet
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regExUsr;
 
         /// <summary>
+        /// rvfname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvfname;
+
+        /// <summary>
         /// txtInputP control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace uMeet
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtInputP;
+
+        /// <summary>
+        /// rvfPwd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rvfPwd;
 
         /// <summary>
         /// btnLogin control.

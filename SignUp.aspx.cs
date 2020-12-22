@@ -19,13 +19,18 @@ namespace uMeet
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //lblErrorMsg.Visible = true;
-            //if (Session["logged on"] == null)
-            //{
-            //    Response.Redirect("UserLogin.aspx");
-            //}
-            //conn.ConnectionString = str;
-            //conn.Open();
+            
+            conn.ConnectionString = str;
+            conn.Open();
+
+            if (IsPostBack)
+            {
+                if (!(String.IsNullOrEmpty(txtInputP.Text.Trim())))
+                {
+                    txtInputP.Attributes["value"] = txtInputP.Text;
+                }
+
+            }
 
         }
 
@@ -123,8 +128,8 @@ namespace uMeet
             txtEmail.Text = "";
             txtPhone.Text = "";
             txtDOB.Text = "";
-            drpList.Items.Clear();
-            fileupload.ID = null;
+            drpList.ClearSelection();
+            fileupload.ID = null;            
         }
     }
 }

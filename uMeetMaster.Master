@@ -28,6 +28,7 @@
                 <asp:HyperLink runat="server" NavigateUrl="~/About.aspx" Text="About" CssClass="headerLnk"></asp:HyperLink>
                 <asp:HyperLink runat="server" NavigateUrl="~/ContactPage.aspx" Text="Contact" CssClass="headerLnk"></asp:HyperLink>
                 <asp:HyperLink runat="server" NavigateUrl="~/Testimonials.aspx" Text="Testimonials" CssClass="headerLnk"></asp:HyperLink>
+                <asp:HyperLink runat="server" NavigateUrl="~/MemberAccessLanding-Page.aspx" Text="Members" CssClass="headerLnk"></asp:HyperLink>
                 <asp:HyperLink runat="server" NavigateUrl="~/UserLogin.aspx" Text="Login" CssClass="headerLnk"></asp:HyperLink>
             </div>
         </header>

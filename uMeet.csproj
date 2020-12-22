@@ -85,6 +85,7 @@
     <Content Include="Image\loveImg.jpg" />
     <Content Include="Image\MainBackground.jpg" />
     <Content Include="indexPage.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="MemberAccessLanding-Page.aspx" />
     <Content Include="MemPageFemale.aspx" />
     <Content Include="MemPageMale.aspx" />
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="indexPage.aspx.designer.cs">
       <DependentUpon>indexPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="MemberAccessLanding-Page.aspx.cs">
       <DependentUpon>MemberAccessLanding-Page.aspx</DependentUpon>

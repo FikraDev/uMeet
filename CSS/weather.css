@@ -58,3 +58,6 @@ table th, table td {
         border: solid thin white; /*adds inner border*/
     }
 
+    h3{
+        color:#fff;
+    }

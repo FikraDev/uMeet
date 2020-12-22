@@ -20,6 +20,8 @@
                         <asp:TextBox runat="server" CssClass="txtInputs" ID="txtInput" placeholder="Enter Username" MaxLength="15"></asp:TextBox>
 
                         <asp:RegularExpressionValidator ID="regExUsr" runat="server" ControlToValidate="txtInput" ErrorMessage="Enter Only Numeric and characters" ValidationExpression="^[a-zA-Z0-9]+$" ForeColor="Red">*</asp:RegularExpressionValidator>
+
+                        <asp:RequiredFieldValidator ID="rvfname" runat="server" ErrorMessage="Username Required!" ForeColor="Red" ControlToValidate="txtInput">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
 
@@ -30,12 +32,14 @@
 
                     <div>
                         <asp:TextBox runat="server" CssClass="txtInputs" ID="txtInputP" placeholder="Enter Password" TextMode="Password"></asp:TextBox>
+
+                         <asp:RequiredFieldValidator ID="rvfPwd" runat="server" ErrorMessage="Password Required!" ForeColor="Red" ControlToValidate="txtInputP">*</asp:RequiredFieldValidator>
                     </div>
                 </div>
 
                 <div class="btnDiv">
-                    <asp:Button runat="server" CssClass="loginBtnEntr" Text="Enter" ID="btnLogin" OnClick="btnLogin_Click" />
-                    <asp:Button runat="server" CssClass="loginBtnCncl" Text="Cancel" ID="btnCancel" OnClick="btnCancel_Click" />
+                    <asp:Button runat="server" CssClass="loginBtnEntr" Text="Login" ID="btnLogin" OnClick="btnLogin_Click" />
+                    <asp:Button runat="server" CssClass="loginBtnCncl" Text="Cancel" ID="btnCancel" OnClick="btnCancel_Click" CausesValidation="false" />
                 </div>
 
                 <div class="regDiv">

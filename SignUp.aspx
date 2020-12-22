@@ -15,17 +15,15 @@
 
                 <div class="newDiv">
 
-                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtUsername" placeholder="Enter Username" MaxLength="15"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="txtInputs" ID="txtUsername" placeholder="Enter Username"></asp:TextBox>
 
 
-                    <asp:RegularExpressionValidator ID="regExUsrname" runat="server" ControlToValidate="txtUsername" ErrorMessage="Enter Only Numeric and characters" ValidationExpression="^[a-zA-Z0-9]+$" ForeColor="Red">*</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="regExUsrname" runat="server" ControlToValidate="txtUsername" ErrorMessage="Enter Only Numeric and characters" ValidationExpression="^[a-zA-Z0-9\s]{7,15}$" ForeColor="Red">*</asp:RegularExpressionValidator>
 
-                    <asp:RegularExpressionValidator ID="regMin" ValidationExpression="\d{6}" runat="server" ErrorMessage="Username - 6 - 15 Characters" ForeColor="Red" ControlToValidate="txtUsername">*</asp:RegularExpressionValidator>
-
-
+                   
                     <asp:TextBox runat="server" CssClass="txtInputs" ID="txtInputP" placeholder="Enter Password" TextMode="Password" ></asp:TextBox>
 
-                    <asp:RegularExpressionValidator ID="regExPwd" ValidationExpression="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){6,15}" runat="server" ErrorMessage="Password must be between 7-15 Characters" ForeColor="Red" ControlToValidate="txtInputP">*</asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="regExPwd" ValidationExpression="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,15}$" runat="server" ErrorMessage="Password must be between 7-15 Characters" ForeColor="Red" ControlToValidate="txtInputP">*</asp:RegularExpressionValidator>
 
                     <asp:RequiredFieldValidator ID="rvfpwd" runat="server" ErrorMessage="Password Required!" ForeColor="Red" ControlToValidate="txtInputP">*</asp:RequiredFieldValidator>
 
@@ -81,7 +79,7 @@
 
                 <div class="btnDiv">
                     <asp:Button runat="server" CssClass="btnSign" ID="btnSignup" Text="Sign Up" OnClick="btnSignup_Click" />
-                    <asp:Button runat="server" CssClass="btnCncl" ID="btnCancel" Text="Cancel" OnClick="btnCancel_Click" />
+                    <asp:Button runat="server" CssClass="btnCncl" CausesValidation="false" ID="btnCancel" Text="Cancel" OnClick="btnCancel_Click" />
                 </div>
 
                 <div>

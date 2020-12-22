@@ -24,6 +24,7 @@
             <div class="nav">
                 <asp:HyperLink runat="server" NavigateUrl="~/EditProfile.aspx" Text="Edit Profile" CssClass="headerLnk"></asp:HyperLink>
                 <asp:HyperLink runat="server" NavigateUrl="~/indexPage.aspx" Text="Home" CssClass="headerLnk"></asp:HyperLink>
+                <asp:HyperLink runat="server" NavigateUrl="~/Logout.aspx" Text="Logout" CssClass="headerLnk"></asp:HyperLink>
             </div>
         </header>
     </div>

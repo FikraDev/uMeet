@@ -11,6 +11,7 @@
         <div class="outercontainer">
             <div class="innercontainer">
 
+                <asp:Label ID="lblcookie" runat="server" CssClass="cookieLabel"></asp:Label>
 
 
                 <div class="singleDiv">

@@ -82,7 +82,8 @@
                 </div>
 
                 <div class="btnDiv">
-                    <asp:Button runat="server" CssClass="btnUp" ID="btnUpdate" Text="Update Profile" OnClick="btnUpdate_Click" />
+                    <asp:Button runat="server" CssClass="btnUp" ID="btnUpdate" Text="Update Profile" OnClientClick="return confirm('Confirm You Want to Update Your Profile');" OnClick="btnUpdate_Click" />
+
                     <asp:Button runat="server" CssClass="btnCncl" ID="btnCancel" Text="Cancel" OnClick="btnCancel_Click" CausesValidation="false"/>
                 </div>
                 <asp:Label ID="lblErrorMsg" runat="server" CssClass="errMsg"></asp:Label>
@@ -96,10 +97,14 @@
                 <div>
                     <asp:TextBox runat="server" CssClass="txtInputs" ID="txtUsrName" placeholder="Enter Username" MaxLength="15"></asp:TextBox>
                 </div>
+
                 <div class="btnDiv">
-                    <asp:Button runat="server" ID="btnDelete" Text="Delete Profile" CssClass="btnDel" OnClick="btnDelete_Click" />
+                    <%--javascript confirmation added here--%>
+                    <asp:Button runat="server" ID="btnDelete" Text="Delete Profile" CssClass="btnDel"  OnClientClick="return confirm('This action will remove your profile from uMeet. Do you wish to proceed?');" OnClick="btnDelete_Click" /> 
+
                     <asp:Button runat="server" CssClass="btnCncl2" ID="btnDelCancel" Text="Cancel" OnClick="btnDelCancel_Click" />
                 </div>
+
                 <asp:Label ID="lblErrMsg" runat="server"></asp:Label>
 
                  <asp:ValidationSummary ID="MySummary" runat="server" ForeColor="Red" />

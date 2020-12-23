@@ -11,10 +11,16 @@ namespace uMeet
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (Session["loggedon"] == null)
             {
                 Response.Redirect("UserLogin.aspx");
+            }
+
+            if (!IsPostBack)
+            {
+                string str = Request.Cookies["ourCooky"].Value;
+                lblcookie.Text = str;
+
             }
         }
 

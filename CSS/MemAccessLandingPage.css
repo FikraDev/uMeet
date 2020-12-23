@@ -51,4 +51,12 @@
     margin-bottom:160px;
 }
 
+.cookieLabel{
+    color:white;
+    font-size:2rem;
+    position:absolute;
+    top:20%;
+    left:90px;
+}
+
 

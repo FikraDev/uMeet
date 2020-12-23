@@ -27,6 +27,7 @@ namespace uMeet
         {
             try
             {
+
                 SqlCommand cmd = new SqlCommand("select * from tblUserLogin where UserName=@UserName and Passwrd=@Passwrd", conn);
                 cmd.Parameters.AddWithValue("@UserName", txtInput.Text);
                 cmd.Parameters.AddWithValue("@Passwrd", txtInputP.Text);
@@ -55,6 +56,12 @@ namespace uMeet
                         Session["UserName"] = dr["UserName"].ToString();
                         Session["fName"] = dr["fName"].ToString();
                         Session["lName"] = dr["lName"].ToString();
+
+                        HttpCookie cooky = new HttpCookie("ourCooky");
+                        cooky.Value = txtInput.Text;
+                        cooky.Expires = DateTime.Now.AddMinutes(25);
+                        Response.Cookies.Add(cooky);
+
                         Response.Redirect("MemberAccessLanding-Page.aspx");
                     }
                 }

@@ -49,7 +49,7 @@
     </div>
 
     <footer>
-        <asp:Literal runat="server" ID="ftr">Copyright &copy; 2020-Charlene Crump, Ryan Campbell, Oneil Gayle & Germain Newby</asp:Literal>
+        <asp:Literal runat="server" ID="ftr">Copyright &copy; 2020-Charlene Crump, Ryan Campbell, Oneil Gayle & Germaine Newby</asp:Literal>
     </footer>
 
 </body>

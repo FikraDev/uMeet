@@ -228,6 +228,7 @@
   <ItemGroup>
     <Content Include="MemberAccessPage.Master" />
     <Content Include="uMeetMaster.Master" />
+    <Content Include="DatabaseFile\uMeetDB-Submission" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
